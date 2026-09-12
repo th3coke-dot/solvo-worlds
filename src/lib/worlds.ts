@@ -217,7 +217,10 @@ export function frameOpacity(
   const opacityAt = (pos: number) => {
     if (pos >= start && pos < fadeOutStart) {
       const into = pos - start;
-      if (into < fadeIn) return Math.min(1, into / fadeIn);
+      if (into < fadeIn) {
+        if (index === 0) return 1;
+        return Math.min(1, into / fadeIn);
+      }
       return 1;
     }
     if (pos >= fadeOutStart && pos < fadeOutEnd) {
