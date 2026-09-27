@@ -11,3 +11,4 @@ dist
 .grok/*
 !.grok/app-env.json
 .DS_Store
+.dashboard/
