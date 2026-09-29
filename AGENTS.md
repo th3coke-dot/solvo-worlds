@@ -349,3 +349,7 @@ auth/db: OFF by default — sign-in, @/lib/db or migrations ONLY on an accounts 
 never:   build an app for a greeting/number/question; invent imagine_* calls;
          ask the user to run commands; delete or abandon /workspace/startup.sh
 ```
+
+## Cost-efficient verification
+
+For verification planning, CI cost/speed work and review handoffs, read [.agents/skills/cost-efficient-verification/SKILL.md](.agents/skills/cost-efficient-verification/SKILL.md). Reuse applicable evidence, measure Actions waste before changing workflows, and preserve required checks and release authority. This policy does not grant merge, deployment or production-data permission.
